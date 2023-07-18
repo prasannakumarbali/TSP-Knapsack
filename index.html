@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15pt;
+      }
+      canvas {
+        border: 2px solid black;
+      }
+
+      button {
+        padding: 10px;
+        font-size: 15pt;
+        margin: 10px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .shortest-path {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 5px;
+      }
+
+      .final {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid rgb(41, 255, 137);
+        border-radius: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Travelling Salesman Problem</h1>
+
+    <canvas id="canvas" width="800" height="534"> </canvas>
+    <hr />
+    <input type="number" name="ants" id="ants" min="1" max="1000" value="100" />
+    <button id="start">Start</button>
+    <button id="clear">Clear Canvas</button>
+    <div class="time-value">
+      <span>Total available time </span>
+    </div>
+    <input
+      type="range"
+      name="time"
+      id="time"
+      style="width: 300px"
+      min="1"
+      max="1000"
+    />
+    <button id="find">Find Best Route</button>
+
+    <hr />
+    <h3>Result :</h3>
+    
+    <script src="aco.js"></script>
+  </body>
+</html>
